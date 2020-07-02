@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="container">
+    {% block heading %}
+    <h1>Products</h1>
+    {% endblock %}
+    <p>Take advantage of our greatest offers ever </p>
+    <ol>
+        {% for name in names %}
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ name }}</h5>
+                {% for price in prices %}
+                <p class="card-text">sh {{ price }}</p>
+                {% endfor %}
+        {% endfor %}
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+    </ol>
+            <img src="https://homepages.cae.wisc.edu/~ece533/images/boat.png" alt="A car">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://homepages.cae.wisc.edu/~ece533/images/tulips.png"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tulips</h5>
+                    <p class="card-text">@ sh 120</p>
+
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+          </div>
+</div>
+
+{% endblock %}

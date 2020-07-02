@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+
+{% block heading %}
+    Welcome {{ name }}
+{% endblock %}
+
+{% block body %}
+    <ul>
+    {% for note in notes %}
+
+        <li>{{ note }}</li>
+    </ul>
+{% endfor %}
+{% endblock %}

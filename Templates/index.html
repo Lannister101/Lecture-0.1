@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+    <div class="section1">
+      {% block heading %}
+      Jirani App
+      {% endblock %}
+      <h3>Welcome to Jirani Kenya's Number 1 online Market</h3>
+    <img  src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" align="middle" alt="A picture of Nairobi">
+    <p>We offer you a platform to buy or sell anything .Our prices are pocket friendly
+    and from trusted suppluers.Join our ever expanding community today .Karibu Jirani  </p>
+    <p>So are you looking to buy or sell </p>
+    <a class="btn btn-primary" href=" {{ url_for('registrationpage') }}" role="button">Sell</a>
+    <a class="btn btn-primary" href=" {{ url_for('usersigninpage') }}" role="button">Buy</a>
+  </div>
+  {% endblock %}
+

@@ -1,0 +1,28 @@
+.container {
+      background-color: lightblue;
+      width: 500;
+      padding: 50px;
+      margin: auto;
+}
+.section1{
+  background-color: lightblue;
+  width: auto;
+  padding: 50px;
+}
+
+
+.registrationpage {
+  background-color: lightblue;
+  width: auto;
+  padding: 50px;
+
+}
+.signinpage{
+  background-color: lightblue;
+  width: auto;
+  padding: 50px;
+  leghth :auto;
+}
+.card {
+  margin: 5px;
+}
